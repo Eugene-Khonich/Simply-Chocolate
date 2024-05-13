@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
+    <!-- Google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalizator -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -17,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- My styles -->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
@@ -127,19 +130,99 @@
           <div class="card-container">
             <ul class="card-list">
               <li class="card-item">
-                <img class="card-img" src="" alt="" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/ingredients/milk-chocolate-desk.jpg    1x,
+                      ./images/ingredients/milk-chocolate-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/ingredients/milk-chocolate.jpg    1x,
+                      ./images/ingredients/milk-chocolate@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card-img"
+                    src="./images/ingredients/milk-chocolate-desk.jpg"
+                    alt="milk-chocolate"
+                  />
+                </picture>
                 <h3>MILK CHOCOLATE</h3>
               </li>
               <li class="card-item">
-                <img class="card-img" src="" alt="" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/ingredients/milk-desk.jpg    1x,
+                      ./images/ingredients/milk-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/ingredients/milk.jpg    1x,
+                      ./images/ingredients/milk@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card-img"
+                    src="./images/ingredients/milk-desk.jpg"
+                    alt="milk"
+                  />
+                </picture>
                 <h3>MILK</h3>
               </li>
               <li class="card-item">
-                <img class="card-img" src="" alt="" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/ingredients/nuts-desk.jpg    1x,
+                      ./images/ingredients/nuts-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/ingredients/nuts.jpg    1x,
+                      ./images/ingredients/nuts@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card-img"
+                    src="./images/ingredients/nuts-desk.jpg"
+                    alt="nuts"
+                  />
+                </picture>
                 <h3>NUTS</h3>
               </li>
               <li class="card-item">
-                <img class="card-img" src="" alt="" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/ingredients/sweet-chocolate-desk.jpg    1x,
+                      ./images/ingredients/sweet-chocolate-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/ingredients/sweet-chocolate.jpg    1x,
+                      ./images/ingredients/sweet-chocolate@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card-img"
+                    src="./images/ingredients/sweet-chocolate-desk.jpg"
+                    alt="sweet-chocolate"
+                  />
+                </picture>
                 <h3>SEMI - SWEET CHOCOLATE</h3>
               </li>
             </ul>
@@ -152,7 +235,35 @@
         <div class="container how-made-container">
           <h2 class="how-made-header">HOW IT’S MADE?</h2>
           <div class="how-made-wrapper">
-            <img src="" alt="" class="how-made-img" />
+            <picture>
+              <source
+                srcset="
+                  ./images/made/made-desk.jpg    1x,
+                  ./images/made/made-desk@2x.jpg 2x
+                "
+                media="(min-width: 1158px)"
+              />
+              <source
+                srcset="
+                  ./images/made/made-tablet.jpg    1x,
+                  ./images/made/made-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/made/made-mob.jpg    1x,
+                  ./images/made/made-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+
+              <img
+                src="./images/made/made-mob.jpg"
+                alt="how-its-made"
+                class="how-made-img"
+              />
+            </picture>
             <div class="how-made-text-wrapper">
               <h3 class="how-made-text-header">
                 Try our chocolates today and discover the perfect balance of
@@ -190,7 +301,15 @@
           <h2 class="reviews-header">CHOCOLATE IS LOVED</h2>
           <ul class="reviews-card-list">
             <li class="reviews-card-item">
-              <img src="" alt="" class="reviews-img" />
+              <img
+                srcset="
+                  ./images/reviews/victoria.png    1x,
+                  ./images/reviews/victoria@2x.png 2x
+                "
+                src="./images/reviews/victoria.png"
+                alt="Victoria Dobrzhanska"
+                class="reviews-img"
+              />
               <h3 class="reviews-card-header">Victoria Dobrzhanska</h3>
               <p class="reviews-card-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -198,7 +317,15 @@
               </p>
             </li>
             <li class="reviews-card-item">
-              <img src="" alt="" class="reviews-img" />
+              <img
+                srcset="
+                  ./images/reviews/nazar.png    1x,
+                  ./images/reviews/nazar@2x.png 2x
+                "
+                src="./images/reviews/nazar.png"
+                alt="Nazar Babenko"
+                class="reviews-img"
+              />
               <h3 class="reviews-card-header">Nazar Babenko</h3>
               <p class="reviews-card-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -207,7 +334,15 @@
               </p>
             </li>
             <li class="reviews-card-item">
-              <img src="" alt="" class="reviews-img" />
+              <img
+                srcset="
+                  ./images/reviews/olena.png    1x,
+                  ./images/reviews/olena@2x.png 2x
+                "
+                src="./images/reviews/olena.png"
+                alt="Olena Kampusch"
+                class="reviews-img"
+              />
               <h3 class="reviews-card-header">Olena Kampusch</h3>
               <p class="reviews-card-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
