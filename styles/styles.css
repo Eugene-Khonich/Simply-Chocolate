@@ -408,6 +408,7 @@ body {
 
 .benefits-container {
   padding: 20px;
+  margin-bottom: 60px;
 }
 
 .benefits-list {
@@ -457,12 +458,98 @@ body {
 
 @media screen and (min-width: 768px) {
   .benefits-container {
-    padding: 50px 32px;
+    padding: 50px 0 50px 32px;
+    margin-bottom: 80px;
   }
 
   .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
+    row-gap: 32px;
   }
+
+  .benefits-item {
+    width: calc((100% - 64px) / 2);
+  }
+}
+
+/*============ BENEFITS STYLES 1200PX ============*/
+
+@media screen and (min-width: 1200px) {
+  .benefits-container {
+    padding: 50px;
+    margin-bottom: 100px;
+  }
+
+  .benefits-list {
+    gap: 70px;
+    row-gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  .benefits-item {
+    position: relative;
+  }
+
+  .benefits-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    height: 50%;
+    width: 1px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/*============ INGREDIENTS STYLES 375PX ============*/
+
+.ingredients-container {
+  margin-bottom: 60px;
+  padding: 0 16px 0 16px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.ingredients-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+}
+
+.ingredients-header {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.ingredients-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
