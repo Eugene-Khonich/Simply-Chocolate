@@ -10,7 +10,8 @@ h6 {
 }
 
 ul,
-ol {
+ol,
+li {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -20,6 +21,10 @@ ol {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 button {
@@ -64,20 +69,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/*================== HEADER STYLES ==================*/
+/*============ HEADER STYLES 375PX ============*/
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 736px;
-  }
-}
-
-@media screen and (min-width: 1168) {
-  .container {
-    max-width: 1168px;
-  }
-}
-
-/*============ HEADER STYLES ============*/
 .nav-list {
   display: none;
 }
@@ -97,7 +91,7 @@ body {
   align-items: center;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.28;
   letter-spacing: -0.03em;
 }
 
@@ -119,5 +113,356 @@ body {
   .header {
     padding-top: 20px;
     padding-bottom: 14px;
+  }
+}
+
+/*============ HEADER STYLES 768PX ============*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+  }
+
+  .social-icon-list {
+    display: flex;
+    gap: 18px;
+    line-height: 1.14;
+  }
+
+  .social-icon {
+    fill: none;
+    stroke: #111111;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 101px;
+  }
+
+  .header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+
+/*============ HEADER STYLES 1200PX ============*/
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .header-nav {
+    gap: 447px;
+  }
+
+  .header-title {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .title-logo {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/*============ HERO STYLES 375PX ============*/
+
+.hero {
+  background: #1e1823;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.4) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url("../images/hero/chocolate-mob.jpg");
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+@media (min-resolution: 192dpi) and (min-width: 375px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url("../images/hero/chocolate-mob@2x.jpg");
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 395px 40px 20px 40px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+  padding-bottom: 32px;
+}
+
+.buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  min-width: 120px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+}
+
+.how-made-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  min-width: 159px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  background: none;
+  white-space: nowrap;
+}
+
+.scroll-btn {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.vector-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.vector-span {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/*============ HERO STYLES 768PX ============*/
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url("../images/hero/chocolate-tablet.jpg");
+    margin-bottom: 40px;
+  }
+
+  .hero-container {
+    padding: 671px 72px 40px 72px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    max-width: 484px;
+  }
+
+  .buttons-container {
+    flex-direction: row;
+    gap: 153px;
+    justify-content: space-between;
+  }
+
+  .buy-btn {
+    min-width: 144px;
+    height: 45px;
+    padding: 14px 40px;
+  }
+
+  .how-made-btn {
+    min-width: 183px;
+    height: 45px;
+    padding: 14px 40px;
+  }
+
+  .scroll-btn {
+    gap: 14px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .vector-span {
+    width: 38px;
+    height: 38px;
+  }
+
+  .vector-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url("../images/hero/chocolate-tablet@2x.jpg");
+  }
+}
+
+/*============ HERO STYLES 1200PX ============*/
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url("../images/hero/chocolate-desk.jpg");
+    margin-bottom: 72px;
+  }
+
+  .hero-container {
+    padding-top: 381px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url("../images/hero/chocolate-desk@2x.jpg");
+  }
+}
+
+/*============ BENEFITS STYLES 375PX ============*/
+
+.benefits {
+  background-color: #1e1823;
+}
+
+.benefits-container {
+  padding: 20px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 18px;
+  padding-right: 28px;
+}
+
+.benefits-icon-container {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.benefits-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/*============ BENEFITS STYLES 768PX ============*/
+
+@media screen and (min-width: 768px) {
+  .benefits-container {
+    padding: 50px 32px;
+  }
+
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 }
