@@ -33,6 +33,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -547,9 +549,38 @@ body {
 }
 
 .card-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+}
+
+.card-item:nth-child(4n + 1) {
+  background: #fd9222;
+  color: #fff;
+}
+
+.card-item:nth-child(4n - 1) {
+  background: #1e1823;
+  border-color: #1e1823;
+  color: #fff;
+}
+
+.card-img {
+  margin: 28px 55px 25px 56px;
+}
+
+.card-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  padding-left: 28px;
+  padding-bottom: 28px;
+}
+
+/*============ INGREDIENTS STYLES 768PX ============*/
+
+@media screen and (min-width: 768px) {
+  .ingredients-container {
+    margin-bottom: 80px;
+  }
 }
