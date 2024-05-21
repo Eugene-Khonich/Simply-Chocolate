@@ -516,13 +516,6 @@ body {
   flex-direction: column;
 }
 
-.ingredients-title {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 24px;
-}
-
 .ingredients-header {
   font-weight: 600;
   font-size: 20px;
@@ -531,12 +524,20 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin: 0 26px;
+}
+
+.ingredients-header-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
 }
 
 .ingredients-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
@@ -549,6 +550,7 @@ body {
 }
 
 .card-item {
+  position: relative;
   border-radius: 15px;
   border: 1px solid #fd9222;
 }
@@ -582,5 +584,243 @@ body {
 @media screen and (min-width: 768px) {
   .ingredients-container {
     margin-bottom: 80px;
+    gap: 50px;
+  }
+
+  .ingredients-header-container {
+    gap: 28px;
+    margin: 0 109px;
+  }
+
+  .ingredients-header {
+    font-size: 24px;
+    line-height: 1.16;
+    margin: 0 37.5px;
+  }
+
+  .card-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .card-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+/*============ INGREDIENTS STYLES 1200PX ============*/
+
+@media screen and (min-width: 1200px) {
+  .ingredients-container {
+    margin-bottom: 100px;
+  }
+
+  .ingredients-header-container {
+    margin: 0 325px;
+  }
+
+  .card-list {
+    gap: 19px;
+  }
+
+  .card-item {
+    width: calc((100% - 57px) / 4);
+  }
+}
+
+/*============ HOW IT`S MADE STYLES 375PX ============*/
+
+.how-made-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.how-made-header {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #111;
+}
+
+.how-made-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.how-made-img {
+  border-radius: 15px;
+}
+
+.how-made-text-wrapper {
+  padding: 20px 14px;
+}
+
+.how-made-text-header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.how-made-text-item {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  padding-left: 16px;
+}
+
+.how-made-text-item::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+}
+
+.how-made-text-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+/*============ HOW IT`S MADE STYLES 768PX ============*/
+
+@media screen and (min-width: 768px) {
+  .how-made-container {
+    gap: 50px;
+    margin-bottom: 80px;
+    padding-left: 61px;
+    padding-right: 61px;
+  }
+
+  .how-made-header {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  .how-made-text-wrapper {
+    padding: 32px;
+  }
+}
+
+/*============ HOW IT`S MADE STYLES 1200PX ============*/
+
+@media screen and (min-width: 1200px) {
+  .how-made-container {
+    margin-bottom: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .how-made-wrapper {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .how-made-text-header {
+    margin-bottom: 28px;
+  }
+
+  .how-made-img {
+    min-width: 600px;
+    height: 400px;
+  }
+
+  .how-made-text-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*============ REVIEWS STYLES 375PX ============*/
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.reviews-header {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 34px;
+}
+
+.reviews-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.reviews-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  height: 200px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  position: relative;
+  padding: 56px 18px 42px;
+}
+
+.reviews-card-header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 24px;
+}
+
+.reviews-img {
+  margin-bottom: 18px;
+  position: absolute;
+  top: -40px;
+}
+
+.reviews-card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.reviews-btn {
+  display: flex;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  min-width: 165px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/*============ REVIEWS STYLES 768PX ============*/
+@media screen and (min-width: 768px) {
+  .reviews-header {
+    font-size: 24px;
+    line-height: 1.16;
   }
 }
