@@ -43,7 +43,7 @@ body {
   background-color: #fafafa;
 }
 
-.visually-hidden {
+.visually-hidden-header {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -804,6 +804,7 @@ body {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
 }
 
 .reviews-btn {
@@ -818,9 +819,67 @@ body {
 }
 
 /*============ REVIEWS STYLES 768PX ============*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .reviews-header {
     font-size: 24px;
     line-height: 1.16;
   }
+
+  .reviews-container {
+    gap: 50px;
+    margin-bottom: 80px;
+  }
+
+  .reviews-card-list {
+    flex-direction: row;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .reviews-card-list {
+    gap: 16px;
+  }
+
+  .reviews-card-item {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .reviews-btn {
+    padding: 14px 40px;
+    min-width: 222px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+  }
 }
+
+/*============ REVIEWS STYLES 1200PX ============*/
+@media screen and (min-width: 1200px) {
+  .reviews-container {
+    padding: 0 32px;
+    margin-bottom: 100px;
+  }
+
+  .reviews-card-list {
+    grid-area: 28px;
+    flex-direction: row;
+  }
+
+  .reviews-card-item {
+    width: calc((100% - 56px) / 3);
+    padding: 56px 24px 24px;
+  }
+}
+
+/*============ FOOTER STYLES 375PX ============*/
